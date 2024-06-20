@@ -55,7 +55,7 @@
       <a name="facing" val="north"/>
     </tool>
     <tool name="Constant">
-      <a name="facing" val="south"/>
+      <a name="value" val="0x0"/>
     </tool>
   </lib>
   <lib desc="#Gates" name="1">
@@ -210,6 +210,8 @@
     <wire from="(450,370)" to="(490,370)"/>
     <wire from="(150,230)" to="(180,230)"/>
     <wire from="(900,230)" to="(920,230)"/>
+    <wire from="(590,350)" to="(590,390)"/>
+    <wire from="(670,350)" to="(670,390)"/>
     <wire from="(520,230)" to="(550,230)"/>
     <wire from="(490,370)" to="(520,370)"/>
     <wire from="(690,230)" to="(710,230)"/>
@@ -363,8 +365,24 @@
       <a name="facing" val="north"/>
       <a name="label" val="RegWEn"/>
     </comp>
+    <comp lib="0" loc="(590,390)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="MemRW"/>
+    </comp>
     <comp lib="0" loc="(490,350)" name="Constant">
       <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(590,350)" name="Constant">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(670,390)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="width" val="2"/>
+      <a name="label" val="WBSel"/>
+    </comp>
+    <comp lib="0" loc="(670,350)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="2"/>
     </comp>
   </circuit>
 </project>

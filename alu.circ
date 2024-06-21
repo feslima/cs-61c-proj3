@@ -258,13 +258,13 @@
     <wire from="(770,790)" to="(770,820)"/>
     <wire from="(1070,370)" to="(1070,380)"/>
     <wire from="(670,450)" to="(820,450)"/>
-    <wire from="(670,610)" to="(820,610)"/>
+    <wire from="(670,210)" to="(820,210)"/>
     <wire from="(670,530)" to="(820,530)"/>
+    <wire from="(670,610)" to="(820,610)"/>
     <wire from="(670,690)" to="(820,690)"/>
     <wire from="(670,930)" to="(820,930)"/>
     <wire from="(670,1090)" to="(820,1090)"/>
     <wire from="(670,290)" to="(820,290)"/>
-    <wire from="(670,210)" to="(820,210)"/>
     <wire from="(670,370)" to="(820,370)"/>
     <wire from="(680,780)" to="(680,820)"/>
     <wire from="(170,620)" to="(190,620)"/>
@@ -375,7 +375,6 @@
     <wire from="(1010,990)" to="(1090,990)"/>
     <wire from="(220,580)" to="(220,650)"/>
     <wire from="(240,730)" to="(290,730)"/>
-    <wire from="(1010,370)" to="(1070,370)"/>
     <wire from="(1220,830)" to="(1320,830)"/>
     <wire from="(610,1030)" to="(650,1030)"/>
     <wire from="(820,990)" to="(820,1020)"/>
@@ -416,6 +415,7 @@
     <wire from="(1000,910)" to="(1090,910)"/>
     <wire from="(230,610)" to="(230,660)"/>
     <wire from="(1110,950)" to="(1140,950)"/>
+    <wire from="(1000,370)" to="(1070,370)"/>
     <wire from="(1340,870)" to="(1360,870)"/>
     <wire from="(170,420)" to="(240,420)"/>
     <wire from="(220,790)" to="(290,790)"/>
@@ -973,11 +973,6 @@
       <a name="width" val="32"/>
       <a name="label" val="or0"/>
     </comp>
-    <comp lib="0" loc="(1010,370)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="32"/>
-      <a name="label" val="result"/>
-    </comp>
     <comp lib="0" loc="(1020,510)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="and_sel"/>
@@ -1112,6 +1107,11 @@
       <a name="label" val="mulh0"/>
     </comp>
     <comp loc="(820,990)" name="mulh_circ"/>
+    <comp lib="0" loc="(1000,370)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="32"/>
+      <a name="label" val="zero"/>
+    </comp>
   </circuit>
   <circuit name="mulh_circ">
     <a name="circuit" val="mulh_circ"/>
@@ -1137,6 +1137,7 @@
     <wire from="(650,850)" to="(650,910)"/>
     <wire from="(650,770)" to="(650,820)"/>
     <wire from="(600,840)" to="(610,840)"/>
+    <wire from="(600,760)" to="(610,760)"/>
     <wire from="(790,360)" to="(790,370)"/>
     <wire from="(370,440)" to="(370,580)"/>
     <wire from="(370,580)" to="(420,580)"/>
@@ -1192,6 +1193,7 @@
     <wire from="(210,770)" to="(210,930)"/>
     <wire from="(600,890)" to="(620,890)"/>
     <wire from="(490,210)" to="(520,210)"/>
+    <wire from="(580,710)" to="(600,710)"/>
     <wire from="(360,1040)" to="(390,1040)"/>
     <wire from="(170,940)" to="(170,1040)"/>
     <wire from="(270,400)" to="(290,400)"/>
@@ -1241,6 +1243,7 @@
     <wire from="(390,640)" to="(470,640)"/>
     <wire from="(460,950)" to="(540,950)"/>
     <wire from="(630,200)" to="(760,200)"/>
+    <wire from="(600,710)" to="(600,760)"/>
     <wire from="(410,190)" to="(480,190)"/>
     <comp lib="0" loc="(200,470)" name="Pin">
       <a name="width" val="32"/>
@@ -1682,6 +1685,10 @@
     </comp>
     <comp lib="0" loc="(590,420)" name="Tunnel">
       <a name="label" val="AB_negative"/>
+    </comp>
+    <comp lib="0" loc="(580,710)" name="Constant">
+      <a name="width" val="32"/>
+      <a name="value" val="0x0"/>
     </comp>
   </circuit>
 </project>

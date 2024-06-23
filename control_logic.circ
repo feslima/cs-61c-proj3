@@ -1019,10 +1019,6 @@
       <a name="enable" val="false"/>
     </comp>
     <comp loc="(970,1330)" name="ALUSel_encoder"/>
-    <comp lib="0" loc="(830,1470)" name="Constant">
-      <a name="width" val="2"/>
-      <a name="value" val="0x3"/>
-    </comp>
     <comp lib="2" loc="(890,1480)" name="Multiplexer">
       <a name="width" val="2"/>
       <a name="enable" val="false"/>
@@ -1039,10 +1035,6 @@
     <comp lib="0" loc="(930,1630)" name="Probe">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="0" loc="(770,1520)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="I_load"/>
-    </comp>
     <comp lib="0" loc="(780,1320)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="3"/>
@@ -1050,7 +1042,7 @@
     </comp>
     <comp lib="0" loc="(830,1490)" name="Constant">
       <a name="width" val="2"/>
-      <a name="value" val="0x0"/>
+      <a name="value" val="0x3"/>
     </comp>
     <comp lib="0" loc="(760,1730)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -1099,6 +1091,14 @@
     <comp lib="0" loc="(830,800)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="funct7_0x00"/>
+    </comp>
+    <comp lib="0" loc="(830,1470)" name="Constant">
+      <a name="width" val="2"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(770,1520)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="U_lui"/>
     </comp>
   </circuit>
   <circuit name="ALUSel_encoder">
